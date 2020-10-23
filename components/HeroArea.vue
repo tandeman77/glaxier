@@ -25,10 +25,10 @@
             </div>
             <p>
               We are a group of young digital specialists who are eager to
-              deliver results for your business. Our experience has taught us
-              that there are no recipes to succeed in the digital world, only
-              the best way for you. Our goal is to find that perfect recipe for
-              you.
+              deliver results for your business. In the age where everything is
+              connected at a touch of a finger tip, there are no recipes to
+              succeed in the digital world, only the best way for you. Our goal
+              is to find that perfect recipe for you.
             </p>
             <a href="#contact" class="btn radius-btn">Get In Touch</a>
           </div>
@@ -37,7 +37,7 @@
         <div class="col-lg-6 d-none d-lg-block">
           <!-- Hero Right Image -->
           <div class="hero-img">
-            <img src="https://via.placeholder.com/500x716" alt="Hero image" />
+            <img src="assets/img/hero/phone.jpg" alt="Hero image" />
           </div>
         </div>
       </div>
@@ -56,3 +56,12 @@ export default {
   name: "HeroArea",
 };
 </script>
+
+<style scoped>
+.hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+</style>
