@@ -26,19 +26,17 @@ import Footer from "~/components/Footer";
 export default {
   components: {
     Header,
-    Footer
+    Footer,
   },
   head() {
     return {
-      title: "Cobra Vue Nuxt Personal Portfolio Template"
+      title: "Glaxier | Grow & Win In the Digital Space",
     };
   },
   mounted() {
     /** ------- Pre Loader **/
-    $(window).on("load", function() {
-      $(".preloader-area")
-        .delay(200)
-        .fadeOut(500);
+    $(window).on("load", function () {
+      $(".preloader-area").delay(200).fadeOut(500);
     });
 
     $("body").scrollspy({ target: "#navigation", spy: "scroll", offset: 300 });
@@ -55,16 +53,16 @@ export default {
         prependTo: ".mobile_menu",
         closedSymbol: "+",
         openedSymbol: "-",
-        closeOnClick: true
+        closeOnClick: true,
       });
     }
 
     /* Smooth Scrolling Using Navigation Menu */
 
-    $('.nav-link[href*="#"]').on("click", function(e) {
+    $('.nav-link[href*="#"]').on("click", function (e) {
       $("html,body").animate(
         {
-          scrollTop: $($(this).attr("href")).offset().top - 70
+          scrollTop: $($(this).attr("href")).offset().top - 70,
         },
         500
       );
@@ -73,7 +71,7 @@ export default {
 
     /*  Custom Sticky Menu  */
 
-    $(window).on("scroll", function() {
+    $(window).on("scroll", function () {
       var scroll = $(window).scrollTop();
       if (scroll < 245) {
         $(".header-sticky").removeClass("sticky-bar");
@@ -86,14 +84,14 @@ export default {
     /*	Works Area Filter js
      /* ================================================= */
 
-    $(window).on("load", function() {
-      $(".filters ul li").on("click", function() {
+    $(window).on("load", function () {
+      $(".filters ul li").on("click", function () {
         $(".filters ul li").removeClass("active");
         $(this).addClass("active");
 
         var data = $(this).attr("data-filter");
         $grid.isotope({
-          filter: data
+          filter: data,
         });
       });
 
@@ -102,8 +100,8 @@ export default {
           itemSelector: ".all",
           percentPosition: true,
           masonry: {
-            columnWidth: ".all"
-          }
+            columnWidth: ".all",
+          },
         });
       }
 
@@ -115,7 +113,7 @@ export default {
         dots: true,
         autoplay: true,
         autoplaySpeed: 3000,
-        arrows: false
+        arrows: false,
       });
     });
 
@@ -136,9 +134,9 @@ export default {
           navContainer: ".blog-text-inner",
           navText: [
             '<i class="icon-arrow-left"></i>',
-            '<i class="icon-arrow-right"></i>'
+            '<i class="icon-arrow-right"></i>',
           ],
-          responsiveClass: true
+          responsiveClass: true,
         });
       }
     }
@@ -155,7 +153,7 @@ export default {
       animationInSpeed: 200,
       animationOutSpeed: 200,
       scrollText: '<i class="icon-arrow-up"></i>',
-      activeOverlay: false
+      activeOverlay: false,
     });
 
     /**
@@ -172,15 +170,15 @@ export default {
       contentType: "html", // or text
       // defaults to false for infinite loop
       loopCount: false,
-      callback: function() {
+      callback: function () {
         foo();
       },
-      resetCallback: function() {
+      resetCallback: function () {
         newTyped();
-      }
+      },
     });
 
-    $(".reset").click(function() {
+    $(".reset").click(function () {
       "use strict";
       $("#typed").typed("reset");
     });
@@ -196,7 +194,7 @@ export default {
 
     // Resume Navigation
 
-    (function() {
+    (function () {
       //variable that will hold the href attr of the links in the menu
       var sections = [];
       //variable that stores the id of the section
@@ -204,13 +202,13 @@ export default {
       //variable for the selection of the anchors in the navbar
       var $navbara = $("#navi a");
 
-      $navbara.on("click", function(e) {
+      $navbara.on("click", function (e) {
         //prevent the page from refreshing
         e.preventDefault();
         //set the top offset animation and speed
         $("html, body").animate(
           {
-            scrollTop: $($(this).attr("href")).offset().top - 180
+            scrollTop: $($(this).attr("href")).offset().top - 180,
           },
           500
         );
@@ -218,11 +216,11 @@ export default {
       });
 
       //select all the anchors in the navbar one after another
-      $navbara.each(function() {
+      $navbara.each(function () {
         // and adds them in the sections variable
         sections.push($($(this).attr("href")));
       });
-      $(window).on("scroll", function(e) {
+      $(window).on("scroll", function (e) {
         // scrollTop retains the value of the scroll top with the reference at the middle of the page
         var scrollTop = $(this).scrollTop() + $(window).height() / 2;
         //cycle through the values in sections array
@@ -240,6 +238,6 @@ export default {
         }
       });
     })();
-  }
+  },
 };
 </script>

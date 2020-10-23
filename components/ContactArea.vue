@@ -21,7 +21,11 @@
               </div>
               <div class="media-body">
                 <h4>Email</h4>
-                <span>contact@glaxier.com.au</span>
+                <span
+                  ><a class="contact-link" href="mailto:contact@glaxier.com.au"
+                    >contact@glaxier.com.au</a
+                  ></span
+                >
               </div>
             </div>
 
@@ -31,7 +35,11 @@
               </div>
               <div class="media-body">
                 <h4>Phone</h4>
-                <span>0424 555 959</span>
+                <span
+                  ><a class="contact-link" href="tel:0424 555 959"
+                    >0424 555 959</a
+                  ></span
+                >
               </div>
             </div>
             <!--
@@ -121,3 +129,14 @@ export default {
   name: "ContactArea",
 };
 </script>
+
+<style scoped>
+.contact-link {
+  text-decoration: none;
+  color: #e4a0a9;
+}
+
+.contact-link:hover {
+  color: #e4707f;
+}
+</style>
