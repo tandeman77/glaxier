@@ -16,13 +16,9 @@
     </div>
     -->
     <!-- End Preloader Area -->
-    <!--
     <Header />
-    -->
     <nuxt />
-    <!--
     <Footer />
-    -->
   </div>
 </template>
 

@@ -1,18 +1,15 @@
 <template>
   <div>
-    <!--
     <HeroArea />
-    
     <ServiceArea />
     <AboutArea />
     <ResumeArea />
-    
+    <!--
     <WorksArea />
     <PriceArea />
     <HireArea />
-    
-    <TestimonialArea />
     -->
+    <TestimonialArea />
     <!--
     <BlogArea />
     -->

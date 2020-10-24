@@ -11,7 +11,7 @@
             <h1>Glaxier!</h1>
             <div>
               We are<br />
-              <!--
+
               <client-only>
                 <span class="typing"
                   ><vue-typer
@@ -21,7 +21,7 @@
                   ></vue-typer
                 ></span>
               </client-only>
-              
+              <!--
               <vue-typed-js
                 :typeSpeed="30"
                 :startDelay="1000"
@@ -54,9 +54,11 @@
     </div>
 
     <!-- Hero Animated Shape -->
-    <div class="hero-shape custom-animation">
-      <img src="assets/img/hero/hero-shape.png" alt="animation shape" />
-    </div>
+    <client-only>
+      <div class="hero-shape custom-animation">
+        <img src="assets/img/hero/hero-shape.png" alt="animation shape" />
+      </div>
+    </client-only>
   </section>
   <!-- Welcome Area End -->
 </template>

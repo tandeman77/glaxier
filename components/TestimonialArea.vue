@@ -14,26 +14,28 @@
       <div class="row">
         <div class="col-lg-6 offset-lg-3 col-md-12">
           <!-- start testimonial carousel -->
-          <div class="test-slider">
-            <!-- start tetimonial item -->
-            <div class="test-item">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur leo est, feugiat nec elementum id, suscipit id nulla.
-                Nulla sit amet luctus dolor. Etiam finibus consequat ante ac
-                congue. Quisque porttitor porttitor tempus.
-              </p>
-              <div class="author-info">
-                <img src="assets/img/testimonial/f.png" alt="client" />
-                <h4>Somoe Company</h4>
-                <div class="position">
-                  Founder
-                  <span>XXXX</span>
+          <client-only>
+            <div class="test-slider">
+              <!-- start tetimonial item -->
+              <div class="test-item">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur leo est, feugiat nec elementum id, suscipit id
+                  nulla. Nulla sit amet luctus dolor. Etiam finibus consequat
+                  ante ac congue. Quisque porttitor porttitor tempus.
+                </p>
+                <div class="author-info">
+                  <img src="assets/img/testimonial/f.png" alt="client" />
+                  <h4>Somoe Company</h4>
+                  <div class="position">
+                    Founder
+                    <span>XXXX</span>
+                  </div>
                 </div>
               </div>
+              <!-- end tetimonial item -->
             </div>
-            <!-- end tetimonial item -->
-          </div>
+          </client-only>
           <!-- end testimonial carousel -->
         </div>
       </div>
