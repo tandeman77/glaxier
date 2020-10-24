@@ -11,11 +11,25 @@
             <div>
               We are
               <client-only>
-                <vue-typed-js :typeSpeed="30" :startDelay="1000" 	:loop="true" :contentType="'html'" :strings="['Digital Advertising Specialists.', 'Google Ads Experts.', 'Facebook Ads Gurus.', 'Copywriters.', 'SEO Experts.', 'Website Developers.', 'App Developers.', 'Graphic Designers.']">
-                  <span class="typing"></span></h1>
+                <vue-typed-js
+                  :typeSpeed="30"
+                  :startDelay="1000"
+                  :loop="true"
+                  :contentType="'html'"
+                  :strings="[
+                    'Digital Advertising Specialists.',
+                    'Google Ads Experts.',
+                    'Facebook Ads Gurus.',
+                    'Copywriters.',
+                    'SEO Experts.',
+                    'Website Developers.',
+                    'App Developers.',
+                    'Graphic Designers.',
+                  ]"
+                >
+                  <span class="typing"></span>
                 </vue-typed-js>
               </client-only>
-              
             </div>
             <p>
               We are a group of young digital specialists who are eager to
