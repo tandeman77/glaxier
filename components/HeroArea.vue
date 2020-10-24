@@ -11,6 +11,7 @@
             <h1>Glaxier!</h1>
             <div>
               We are<br />
+              <!--
               <client-only>
                 <span class="typing"
                   ><vue-typer
@@ -20,7 +21,7 @@
                   ></vue-typer
                 ></span>
               </client-only>
-              <!--
+              
               <vue-typed-js
                 :typeSpeed="30"
                 :startDelay="1000"
