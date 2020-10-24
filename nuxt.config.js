@@ -18,21 +18,21 @@ export default {
       id: "body"
     },
     link: [
-      {
-        rel: "stylesheet",
-        href:
-          "https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700"
-      },
-      {
-        rel: "stylesheet",
-        href:
-          "https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,900"
-      },
-      {
-        rel: "stylesheet",
-        href:
-          "https://fonts.googleapis.com/css2?family=Cutive+Mono"
-      },
+      // {
+      //   rel: "stylesheet",
+      //   href:
+      //     "https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700"
+      // },
+      // {
+      //   rel: "stylesheet",
+      //   href:
+      //     "https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,900"
+      // },
+      // {
+      //   rel: "stylesheet",
+      //   href:
+      //     "https://fonts.googleapis.com/css2?family=Cutive+Mono"
+      // },
       { rel: "stylesheet", href: "/assets/css/bootstrap.min.css" },
       { rel: "stylesheet", href: "/assets/css/font-awesome.min.css" },
       { rel: "stylesheet", href: "/assets/css/simple-line-icons.css" },

@@ -1,8 +1,8 @@
 {
-  "name": "cobra",
+  "name": "Glaxier Website",
   "version": "1.0.0",
-  "description": "My awesome Nuxt.js project",
-  "author": "KarimEzZat",
+  "description": "Revolutionary Full Stack Digital Agency",
+  "author": "Tan Pong",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -17,5 +17,9 @@
     "nuxt": "^2.0.0",
     "nuxt-fontawesome": "^0.4.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "typeface-cutive-mono": "^1.1.13",
+    "typeface-poppins": "^1.1.13",
+    "typeface-roboto": "^1.1.13"
+  }
 }
