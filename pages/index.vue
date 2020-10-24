@@ -1,7 +1,8 @@
 <template>
   <div>
-    <HeroArea />
     <!--
+    <HeroArea />
+    
     <ServiceArea />
     <AboutArea />
     <ResumeArea />
