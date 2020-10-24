@@ -191,7 +191,7 @@ export default {
 
     function foo() {
       "use strict";
-      console.log("Cobra");
+      console.log("Typing");
     }
 
     // Resume Navigation

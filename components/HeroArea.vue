@@ -10,18 +10,12 @@
             <h1>Glaxier!</h1>
             <div>
               We are
-              <div id="typed-strings">
-                <!-- Animated Text Writer -->
-                <span>Digital Advertising Specialists.</span>
-                <span>Google Ads Experts.</span>
-                <span>Facebook Ads Gurus.</span>
-                <span>Copywriters.</span>
-                <span>SEO Experts.</span>
-                <span>Website Developers.</span>
-                <span>App Developers.</span>
-                <span>Graphic Designers.</span>
-              </div>
-              <span class="LR-C" id="typed" style="white-space: pre"></span>
+              <client-only>
+                <vue-typed-js :typeSpeed="30" :startDelay="1000" 	:loop="true" :contentType="'html'" :strings="['Digital Advertising Specialists.', 'Google Ads Experts.', 'Facebook Ads Gurus.', 'Copywriters.', 'SEO Experts.', 'Website Developers.', 'App Developers.', 'Graphic Designers.']">
+                  <span class="typing"></span></h1>
+                </vue-typed-js>
+              </client-only>
+              
             </div>
             <p>
               We are a group of young digital specialists who are eager to
