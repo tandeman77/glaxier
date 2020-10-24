@@ -20,7 +20,9 @@
     <Header />
     -->
     <nuxt />
+    <!--
     <Footer />
+    -->
   </div>
 </template>
 
