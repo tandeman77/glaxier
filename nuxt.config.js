@@ -65,7 +65,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{src:'~/plugins/TypedJs.js', mode:'client'}],
+  plugins: [{src:'~/plugins/TypedJs.js', mode:'client'},{src:'~/plugins/VueTyper.js', mode:'client'}],
   /*
    ** Nuxt.js dev-modules
    */

@@ -7,27 +7,30 @@
           <!-- Start Hero Caption -->
           <div class="hero-caption">
             <span class="subheading">Hey! We are</span>
+
             <h1>Glaxier!</h1>
             <div>
-              We are
+              We are<br />
+              <client-only>
+                <span class="typing"
+                  ><vue-typer
+                    :text="typeString"
+                    initialAction="erasing"
+                    :preTypeDelay="5"
+                  ></vue-typer
+                ></span>
+              </client-only>
+              <!--
               <vue-typed-js
                 :typeSpeed="30"
                 :startDelay="1000"
                 :loop="true"
                 :contentType="'html'"
-                :strings="[
-                  'Digital Advertising Specialists.',
-                  'Google Ads Experts.',
-                  'Facebook Ads Gurus.',
-                  'Copywriters.',
-                  'SEO Experts.',
-                  'Website Developers.',
-                  'App Developers.',
-                  'Graphic Designers.',
-                ]"
+                :strings="typeString"
               >
                 <span class="typing"></span>
               </vue-typed-js>
+              -->
             </div>
             <p>
               We are a group of young digital specialists who are eager to
@@ -60,6 +63,21 @@
 <script>
 export default {
   name: "HeroArea",
+  components: {},
+  data() {
+    return {
+      typeString: [
+        "Digital Advertising Specialists.",
+        "Google Ads Experts.",
+        "Facebook Ads Gurus.",
+        "Copywriters.",
+        "SEO Experts.",
+        "Website Developers.",
+        "App Developers.",
+        "Graphic Designers.",
+      ],
+    };
+  },
 };
 </script>
 
@@ -69,5 +87,9 @@ export default {
   height: 100%;
   object-fit: cover;
   overflow: hidden;
+}
+
+.vue-typer span {
+  color: #e45447;
 }
 </style>

@@ -158,42 +158,6 @@ export default {
       activeOverlay: false,
     });
 
-    /**
-     * =======================================
-     * typed.js customize
-     * =======================================
-     */
-
-    $("#typed").typed({
-      stringsElement: $("#typed-strings"),
-      typeSpeed: 100,
-      backDelay: 1000,
-      loop: true,
-      contentType: "html", // or text
-      // defaults to false for infinite loop
-      loopCount: false,
-      callback: function () {
-        foo();
-      },
-      resetCallback: function () {
-        newTyped();
-      },
-    });
-
-    $(".reset").click(function () {
-      "use strict";
-      $("#typed").typed("reset");
-    });
-
-    function newTyped() {
-      "use strict" /* A new typed object */;
-    }
-
-    function foo() {
-      "use strict";
-      console.log("Typing");
-    }
-
     // Resume Navigation
 
     (function () {
