@@ -21,7 +21,7 @@
                   ></vue-typer
                 ></span>
               </client-only>
-              
+              -->
               <vue-typed-js
                 :typeSpeed="30"
                 :startDelay="1000"

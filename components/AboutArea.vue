@@ -9,7 +9,7 @@
             <img
               class="img-fluid"
               src="assets/img/about/5063.jpg"
-              alt="about me"
+              alt="about us"
             />
           </div>
           <!-- End About Area Image -->

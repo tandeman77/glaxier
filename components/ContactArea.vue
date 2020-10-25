@@ -66,7 +66,6 @@
             class="row contact-form"
             action="#"
             method="POST"
-            data-netlify="true"
             name="contact"
           >
             <div class="col-xs-12 col-sm-6">
