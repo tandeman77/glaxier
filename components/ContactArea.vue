@@ -61,61 +61,64 @@
           </div>
         </div>
         <div class="col-lg-7 offset-lg-2 col-md-8">
-          <form
-            id="contact-form"
-            class="row contact-form"
-            action="#"
-            method="POST"
-            name="contact"
-          >
-            <div class="col-xs-12 col-sm-6">
-              <div class="form-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Enter your name"
-                  name="name"
-                />
+          <client-only>
+            <form
+              id="contact-form"
+              class="row contact-form"
+              action="#"
+              method="POST"
+              data-netlify="true"
+              name="contact"
+            >
+              <div class="col-xs-12 col-sm-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter your name"
+                    name="name"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="col-xs-12 col-sm-6">
-              <div class="form-group">
-                <input
-                  type="email"
-                  class="form-control"
-                  name="email"
-                  placeholder="Your email address"
-                />
+              <div class="col-xs-12 col-sm-6">
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    placeholder="Your email address"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="col-xs-12 col-sm-12">
-              <div class="form-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  name="subject"
-                  placeholder="Enter the discussion title"
-                />
+              <div class="col-xs-12 col-sm-12">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="subject"
+                    placeholder="Enter the discussion title"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="col-xs-12 col-sm-12">
-              <div class="form-group">
-                <textarea
-                  name="message"
-                  id="message"
-                  class="form-control"
-                  placeholder="Write your message"
-                ></textarea>
+              <div class="col-xs-12 col-sm-12">
+                <div class="form-group">
+                  <textarea
+                    name="message"
+                    id="message"
+                    class="form-control"
+                    placeholder="Write your message"
+                  ></textarea>
+                </div>
               </div>
-            </div>
-            <div class="col-xs-12 col-sm-12">
-              <div class="button-field">
-                <button type="submit" class="btn radius-btn">
-                  Send Message now
-                </button>
+              <div class="col-xs-12 col-sm-12">
+                <div class="button-field">
+                  <button type="submit" class="btn radius-btn">
+                    Send Message now
+                  </button>
+                </div>
               </div>
-            </div>
-          </form>
+            </form>
+          </client-only>
         </div>
       </div>
     </div>

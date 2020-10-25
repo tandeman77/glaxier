@@ -11,27 +11,17 @@
             <h1>Glaxier!</h1>
             <div>
               We are<br />
-              <!--
               <client-only>
-                <span class="typing"
-                  ><vue-typer
-                    :text="typeString"
-                    initialAction="erasing"
-                    :preTypeDelay="5"
-                  ></vue-typer
-                ></span>
+                <vue-typed-js
+                  :typeSpeed="30"
+                  :startDelay="1000"
+                  :loop="true"
+                  :contentType="'html'"
+                  :strings="typeString"
+                >
+                  <span class="typing"></span>
+                </vue-typed-js>
               </client-only>
-              -->
-              <vue-typed-js
-                :typeSpeed="30"
-                :startDelay="1000"
-                :loop="true"
-                :contentType="'html'"
-                :strings="typeString"
-              >
-                <span class="typing"></span>
-              </vue-typed-js>
-              -->
             </div>
             <p>
               We are a group of young digital specialists who are eager to
