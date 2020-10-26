@@ -66,7 +66,6 @@
             class="row contact-form"
             v-on:submit.prevent="formSubmit"
             method="post"
-            action="/"
             data-netlify="true"
             name="contact"
             v-show="!submitted"
