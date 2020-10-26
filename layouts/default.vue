@@ -30,11 +30,6 @@ export default {
     Header,
     Footer,
   },
-  head() {
-    return {
-      title: "Glaxier | Grow & Win In the Digital Space",
-    };
-  },
   mounted() {
     /** ------- Pre Loader **/
     // $(window).on("load", function () {

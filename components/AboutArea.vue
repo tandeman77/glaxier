@@ -36,8 +36,8 @@
               designers and developers who are excited to learn about your brand
               and help you grow.
               <br /><br />
-              Our Brand, Glaxier came from the word glacier. It's a metaphore
-              for an iceberg which may seem small above the water but is much
+              Our Brand, Glaxier came from the word glacier. It's a metaphor for
+              an iceberg which may seem small above the water but is much
               biggest under water. Digital marketing effort may not be apparent
               but it is a crucial part of the succeess of many bussinesses no
               matter the size. In a way, our team act as the under-water part of

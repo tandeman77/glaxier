@@ -18,6 +18,7 @@
 </template>
 
 <script>
+import ogImage from "~/static/assets/img/logo.png";
 import HeroArea from "~/components/HeroArea";
 import ServiceArea from "~/components/ServiceArea";
 import AboutArea from "~/components/AboutArea";
@@ -41,6 +42,29 @@ export default {
     TestimonialArea,
     BlogArea,
     ContactArea,
+  },
+  data() {
+    return {
+      pageTitle:
+        "Glaxier | A Digital Arm of Businesses to Help them Grow & Win In the Digital Space",
+      pageDescription:
+        "Revolutionary full service digital agency. At Glaxier, we help businesses grow and compete online by offering digital advertising, graphic design, website developement and copy writing services. All to the highest quality guide by industry best practice with a boost of Glaxier's innovations.",
+    };
+  },
+  head() {
+    return {
+      title:
+        "Glaxier | A Digital Arm of Businesses to Help them Grow & Win In the Digital Space",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: this.pageDescription,
+        },
+        { hid: "og:title", name: "og:title", content: this.pageTitle },
+        { hid: "og:image", name: "og:image", content: this.BASE_URL + ogImage },
+      ],
+    };
   },
 };
 </script>
