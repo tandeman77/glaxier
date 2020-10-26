@@ -116,7 +116,7 @@
                 </div>
               </div>
               <div class="col-xs-12 col-sm-12">
-                <div class="button-field">
+                <div class="button-field d-flex justify-content-sm-start justify-content-center">
                   <button type="submit" class="btn radius-btn">
                     Send Message now
                   </button>
