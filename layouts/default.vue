@@ -204,13 +204,6 @@ export default {
         }
       });
     })();
-
-    //add trailing slash
-    (function () {
-      if (!location.href.endsWith("/")) {
-        window.location = location.href + "/";
-      }
-    })();
   },
 };
 </script>
