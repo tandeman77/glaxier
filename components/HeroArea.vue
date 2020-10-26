@@ -37,7 +37,10 @@
         <div class="col-lg-6 d-none d-lg-block">
           <!-- Hero Right Image -->
           <div class="hero-img">
-            <img src="assets/img/hero/phone.jpg" alt="Hero image" />
+            <img
+              src="assets/img/hero/mockup.png"
+              alt="glaxier website design mock up in different screen sizes"
+            />
           </div>
         </div>
       </div>

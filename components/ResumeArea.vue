@@ -297,7 +297,7 @@
                 <span class="icon-energy"></span>
               </div>
               <div class="text pl-sm-3 text-center text-sm-left">
-                <h4 class="my-1 my-sm-0">Energy (Electricity and Gas)</h4>
+                <h4 class="my-1 my-sm-0">Energy</h4>
                 <p>
                   Getting people to change to your brand is challenging industry
                   as it is hard to distinguish from other competitors. Purchase

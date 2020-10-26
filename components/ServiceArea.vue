@@ -31,8 +31,8 @@
                 <h4>Digital Advertising</h4>
                 <p>
                   A complete solution for digital-ready businesses. Generate
-                  sales/leads/engagement across Google, Facebook, Instagram or
-                  trending platforms like Tik Tok.
+                  sales/leads/engagement across Google, Facebook, Instagram,
+                  TikTok and More.
                 </p>
               </div>
               <!-- End Single Service Block -->
@@ -47,8 +47,8 @@
                 <h4>Social Media Management</h4>
                 <p>
                   Generate brand loyalty and engagement with organic social
-                  strategy across platforms like Facebook, Instagram and
-                  LinkedIn.
+                  media strategy across popular platforms like Facebook,
+                  Instagram and LinkedIn.
                 </p>
               </div>
               <!-- End Single Service Block -->
