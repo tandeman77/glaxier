@@ -272,11 +272,6 @@ ol {
   margin: 0 auto;
 }
 
-/* colours */
-.link-blue {
-  color: #798bb9;
-}
-
 /* =================================== */
 /*    Header Menu
 /* =================================== */
@@ -547,9 +542,11 @@ h2.service-title {
   font-weight: 700;
   margin-bottom: 10px;
 }
+/*
 #navi li:last-child {
   margin-bottom: 0;
 }
+*/
 #navi li a {
   color: #e45447;
 }
@@ -582,13 +579,15 @@ h2.service-title {
   font-weight: 700;
   margin-bottom: 30px;
 }
+
 .page .resume-wrap {
   width: 100%;
+  padding: 40px 30px;
   margin-bottom: 30px;
   background-color: #f9f9ff;
-  padding: 40px 30px;
   border-radius: 10px;
 }
+
 .page .resume-wrap:last-child {
   margin-bottom: 0;
 }
@@ -603,9 +602,18 @@ h2.service-title {
   font-size: 20px;
 }
 .page .resume-wrap .text {
-  width: calc(100% - 100px);
   padding: 0 0 10px;
 }
+
+@media only screen and (min-width: 576px) {
+  .page .resume-wrap .text {
+    width: calc(100% - 100px);
+  }
+  .page .resume-wrap {
+    padding: 40px 0 40px 30px;
+  }
+}
+
 .page .resume-wrap .date {
   font-weight: 700;
   font-size: 16px;
@@ -1077,6 +1085,14 @@ h2.service-title {
 }
 .footer-area .footer-bottom a {
   color: #e45447;
+}
+
+.footer-top {
+  max-width: 250px;
+}
+
+.footer-top img {
+  max-width: 100%;
 }
 
 /* =================================== */

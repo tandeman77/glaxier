@@ -40,7 +40,7 @@
 
             <div class="col-lg-6 col-md-6 col-sm-6">
               <!-- Start Single Service Block -->
-              <div class="service-block text-center mt-4 mb-4 mb-lg-0">
+              <div class="service-block text-center mt-sm-4 mb-4 mb-lg-0">
                 <i>
                   <fa :icon="['fas', 'users']" />
                 </i>

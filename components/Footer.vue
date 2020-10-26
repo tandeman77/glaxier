@@ -3,11 +3,14 @@
   <footer class="footer-area sky-blue">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-12">
+        <div class="col-lg-12 d-flex justify-content-center">
           <div class="footer-top flex-column">
             <div class="footer-logo text-center">
               <a href="/#top">
-                <img src="assets/img/logo.png" alt="logo" />
+                <img
+                  src="assets/img/logo.png"
+                  alt="Glaxier, complete digital agency's logo"
+                />
               </a>
               <h4>Follow Us</h4>
             </div>
@@ -21,7 +24,7 @@
       </div>
       <div class="row footer-bottom text-center justify-content-center">
         <p class="col-lg-8 col-sm-12 footer-text">
-          Copyright ©All rights reserved | Glaxier
+          Copyright © All rights reserved | Glaxier
         </p>
       </div>
     </div>

@@ -74,6 +74,7 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
+    '@nuxtjs/gtm',
     [
       "nuxt-fontawesome",
       {
@@ -87,8 +88,11 @@ export default {
         ]
       },
     ],
-    ['@nuxtjs/google-gtag',{id: 'GTM-WQQ7C6C'}]
   ],
+  gtm: {
+    enabled: true,
+    id: 'GTM-WQQ7C6C'
+  },
   /*
    ** Build configuration
    */

@@ -19,13 +19,13 @@
               class="d-flex align-items-center justify-content-around d-lg-inline"
             >
               <li>
-                <a href="#page-1" class="link-blue">B2C Industry</a>
+                <a href="#page-1">B2C Industry</a>
               </li>
               <li>
-                <a href="#page-2" class="link-blue">B2B Industry</a>
+                <a href="#page-2">B2B Industry</a>
               </li>
               <li>
-                <a href="#page-3" class="link-blue">Non-Profit</a>
+                <a href="#page-3">Non-Profit</a>
               </li>
             </ul>
           </nav>
