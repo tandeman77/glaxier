@@ -64,9 +64,9 @@
           <form
             id="contact-form"
             class="row contact-form"
-            v-on:submit.prevent="formSubmit"
+            v-on:submit.stop="formSubmit"
             method="POST"
-            enctype="multipart/form-data"
+            enctype="application/x-www-form-urlencoded"
             action="/"
             data-netlify="true"
             name="contact"
