@@ -68,7 +68,7 @@
               v-on:submit="formSubmit"
               method="POST"
               enctype="application/x-www-form-urlencoded"
-              action="/thank-you"
+              action="/thank-you/"
               data-netlify="true"
               name="contact"
               v-show="!submitted"
