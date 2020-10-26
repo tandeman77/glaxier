@@ -65,7 +65,7 @@
             <form
               id="contact-form"
               class="row contact-form"
-              v-on:submit.prevent="formSubmit"
+              v-on:submit="formSubmit"
               method="POST"
               enctype="application/x-www-form-urlencoded"
               action="/thank-you"
