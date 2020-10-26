@@ -66,11 +66,12 @@
             class="row contact-form"
             v-on:submit.prevent="formSubmit"
             method="POST"
+            enctype="multipart/form-data"
+            action="/"
             data-netlify="true"
             name="contact"
             v-show="!submitted"
           >
-            <input type="hidden" name="form-name" value="contact" />
             <div class="col-xs-12 col-sm-6">
               <div class="form-group">
                 <input
