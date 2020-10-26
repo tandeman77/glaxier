@@ -65,11 +65,14 @@
             id="contact-form"
             class="row contact-form"
             v-on:submit.prevent="formSubmit"
-            method="POST"
+            method="post"
+            action="/"
             data-netlify="true"
+            data-netlify-honeypot="bot-field"
             name="contact"
             v-show="!submitted"
           >
+            <input type="hidden" name="form-name" value="contact" />
             <div class="col-xs-12 col-sm-6">
               <div class="form-group">
                 <input
