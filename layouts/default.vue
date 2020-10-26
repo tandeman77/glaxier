@@ -37,9 +37,9 @@ export default {
   },
   mounted() {
     /** ------- Pre Loader **/
-    $(window).on("load", function () {
-      $(".preloader-area").delay(200).fadeOut(500);
-    });
+    // $(window).on("load", function () {
+    //   $(".preloader-area").delay(200).fadeOut(500);
+    // });
 
     $("body").scrollspy({ target: "#navigation", spy: "scroll", offset: 300 });
 
@@ -203,6 +203,13 @@ export default {
           $('#navi a[href="#' + id + '"]').addClass("current");
         }
       });
+    })();
+
+    //add trailing slash
+    (function () {
+      if (!location.href.endsWith("/")) {
+        window.location = location.href + "/";
+      }
     })();
   },
 };
