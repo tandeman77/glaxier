@@ -1459,3 +1459,10 @@ textarea.form-control {
   top: 0px;
   z-index: -1;
 }
+
+/* =================================== */
+/*    Thank You Area
+/* =================================== */
+.thankyou-subheading {
+  font-size: 1.2rem;
+}

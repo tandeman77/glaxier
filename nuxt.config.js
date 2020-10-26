@@ -85,9 +85,14 @@ export default {
             icons: ["fas"]
           }
         ]
-      }
+      },
+      '@nuxtjs/gtm',
     ]
   ],
+  
+  gtm: {
+    id: 'GTM-WQQ7C6C'
+  },
   /*
    ** Build configuration
    */

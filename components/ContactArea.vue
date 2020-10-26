@@ -64,10 +64,10 @@
           <form
             id="contact-form"
             class="row contact-form"
-            v-on:submit.stop="formSubmit"
+            v-on:submit="formSubmit"
             method="POST"
             enctype="application/x-www-form-urlencoded"
-            action="/"
+            action="/thank-you"
             data-netlify="true"
             name="contact"
             v-show="!submitted"
