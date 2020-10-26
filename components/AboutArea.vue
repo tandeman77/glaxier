@@ -21,11 +21,11 @@
             <div class="section-title mb-50">
               <h2>Who is Glaxier?</h2>
             </div>
-            <div class="quality-tags">
-              <span class="quality-tag">Passionate</span>
-              <span class="quality-tag">Innovative</span>
-              <span class="quality-tag">Futuristic</span>
-              <span class="quality-tag">Hard-working</span>
+            <div class="quality-tags d-flex flex-wrap">
+              <span class="quality-tag m-1">Passionate</span>
+              <span class="quality-tag m-1">Innovative</span>
+              <span class="quality-tag m-1">Futuristic</span>
+              <span class="quality-tag m-1">Hard-working</span>
             </div>
             <p>
               We are a team of young and passionate Digital Specialists. Our

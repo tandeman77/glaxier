@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-5 mb-5 mb-lg-0">
-          <div class="process-block pl-4">
+          <div class="process-block pl-sm-4">
             <span class="text-uppercase text-sm letter-spacing"
               >Our Services</span
             >

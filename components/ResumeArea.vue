@@ -12,18 +12,20 @@
       </div>
       <!-- End Section Title -->
       <div class="row">
-        <div class="col-lg-3 d-none d-lg-block">
+        <div class="col-lg-3 d-block mb-3 mb-lg-0">
           <!-- Start industry experience Nav -->
           <nav id="navi">
-            <ul>
+            <ul
+              class="d-flex align-items-center justify-content-around d-lg-inline"
+            >
               <li>
-                <a href="#page-1">B2C Industry</a>
+                <a href="#page-1" class="link-blue">B2C Industry</a>
               </li>
               <li>
-                <a href="#page-2">B2B Industry</a>
+                <a href="#page-2" class="link-blue">B2B Industry</a>
               </li>
               <li>
-                <a href="#page-3">Non-Profit</a>
+                <a href="#page-3" class="link-blue">Non-Profit</a>
               </li>
             </ul>
           </nav>
@@ -32,15 +34,17 @@
         <div class="col-lg-9 col-md-12">
           <!-- Start B2C -->
           <div id="page-1" class="page one">
-            <h3 class="heading"></h3>
-            <div class="resume-wrap transition d-flex">
+            <h3 class="heading text-center text-sm-left">B2C Industry</h3>
+            <div
+              class="resume-wrap transition d-flex flex-column flex-sm-row align-items-center align-items-sm-start"
+            >
               <div
                 class="icon d-flex align-items-center justify-content-center"
               >
                 <span class="icon-doc"></span>
               </div>
-              <div class="text pl-3">
-                <h4>Insurance</h4>
+              <div class="text pl-sm-3 text-center text-sm-left">
+                <h4 class="my-1 my-sm-0">Insurance</h4>
                 <p>
                   We've worked on a number of travel insurance brands. The
                   industry is extremely competitive which makes it challenging
@@ -50,14 +54,16 @@
               </div>
             </div>
 
-            <div class="resume-wrap transition d-flex">
+            <div
+              class="resume-wrap transition d-flex flex-column flex-sm-row align-items-center align-items-sm-start"
+            >
               <div
                 class="icon d-flex align-items-center justify-content-center"
               >
                 <span class="icon-heart"></span>
               </div>
-              <div class="text pl-3">
-                <h4>Health & Fitness</h4>
+              <div class="text pl-sm-3 text-center text-sm-left">
+                <h4 class="my-1 my-sm-0">Health & Fitness</h4>
                 <p>
                   Fitness is an interesting industry to work on. Many fitness
                   businesses are franchises which have unique challenges which
@@ -67,14 +73,16 @@
                 </p>
               </div>
             </div>
-            <div class="resume-wrap transition d-flex">
+            <div
+              class="resume-wrap transition d-flex flex-column flex-sm-row align-items-center align-items-sm-start"
+            >
               <div
                 class="icon d-flex align-items-center justify-content-center"
               >
                 <span class="icon-bag"></span>
               </div>
-              <div class="text pl-3">
-                <h4>Consumer Goods</h4>
+              <div class="text pl-sm-3 text-center text-sm-left">
+                <h4 class="my-1 my-sm-0">Consumer Goods</h4>
                 <p>
                   Building brand awareness is one of the most important
                   investment for the FMCG industry. If you're in this industry,
@@ -88,14 +96,16 @@
                 </p>
               </div>
             </div>
-            <div class="resume-wrap transition d-flex">
+            <div
+              class="resume-wrap transition d-flex flex-column flex-sm-row align-items-center align-items-sm-start"
+            >
               <div
                 class="icon d-flex align-items-center justify-content-center"
               >
                 <span class="icon-game-controller"></span>
               </div>
-              <div class="text pl-3">
-                <h4>Gambling</h4>
+              <div class="text pl-sm-3 text-center text-sm-left">
+                <h4 class="my-1 my-sm-0">Gambling</h4>
                 <p>
                   Gambling is a classic example of a B2C business. Decisions are
                   implusive, it is important to maximise value from a customer
@@ -110,14 +120,16 @@
                 </p>
               </div>
             </div>
-            <div class="resume-wrap transition d-flex">
+            <div
+              class="resume-wrap transition d-flex flex-column flex-sm-row align-items-center align-items-sm-start"
+            >
               <div
                 class="icon d-flex align-items-center justify-content-center"
               >
                 <span class="icon-emotsmile"></span>
               </div>
-              <div class="text pl-3">
-                <h4>Health Services</h4>
+              <div class="text pl-sm-3 text-center text-sm-left">
+                <h4 class="my-1 my-sm-0">Health Services</h4>
                 <p>
                   While the health industry is challenge due to many
                   restrictions major platforms such as Google and Facebook,
@@ -133,14 +145,16 @@
                 </p>
               </div>
             </div>
-            <div class="resume-wrap transition d-flex">
+            <div
+              class="resume-wrap transition d-flex flex-column flex-sm-row align-items-center align-items-sm-start"
+            >
               <div
                 class="icon d-flex align-items-center justify-content-center"
               >
                 <span class="icon-wallet"></span>
               </div>
-              <div class="text pl-3">
-                <h4>Finance & Professional Services</h4>
+              <div class="text pl-sm-3 text-center text-sm-left">
+                <h4 class="my-1 my-sm-0">Finance & Professional Services</h4>
                 <p>
                   As a professional service provider ourselves, we know how hard
                   it is to build trust with our prospects. Offering unique
@@ -156,14 +170,16 @@
                 </p>
               </div>
             </div>
-            <div class="resume-wrap transition d-flex">
+            <div
+              class="resume-wrap transition d-flex flex-column flex-sm-row align-items-center align-items-sm-start"
+            >
               <div
                 class="icon d-flex align-items-center justify-content-center"
               >
                 <span class="icon-notebook"></span>
               </div>
-              <div class="text pl-3">
-                <h4>Education</h4>
+              <div class="text pl-sm-3 text-center text-sm-left">
+                <h4 class="my-1 my-sm-0">Education</h4>
                 <p>
                   Your target audience will determine the best channel for you
                   to invest. Again, it is important to show up once you've
@@ -176,14 +192,16 @@
                 </p>
               </div>
             </div>
-            <div class="resume-wrap transition d-flex">
+            <div
+              class="resume-wrap transition d-flex flex-column flex-sm-row align-items-center align-items-sm-start"
+            >
               <div
                 class="icon d-flex align-items-center justify-content-center"
               >
                 <span class="icon-compass"></span>
               </div>
-              <div class="text pl-3">
-                <h4>Tourism</h4>
+              <div class="text pl-sm-3 text-center text-sm-left">
+                <h4 class="my-1 my-sm-0">Tourism</h4>
                 <p>
                   The tourism is exciting and inspiring to work on. Our team
                   loves travelling and adventure and we often get holiday ideas
@@ -198,14 +216,16 @@
                 </p>
               </div>
             </div>
-            <div class="resume-wrap transition d-flex">
+            <div
+              class="resume-wrap transition d-flex flex-column flex-sm-row align-items-center align-items-sm-start"
+            >
               <div
                 class="icon d-flex align-items-center justify-content-center"
               >
                 <span class="icon-home"></span>
               </div>
-              <div class="text pl-3">
-                <h4>Real Estate</h4>
+              <div class="text pl-sm-3 text-center text-sm-left">
+                <h4 class="my-1 my-sm-0">Real Estate</h4>
                 <p>
                   For most people, making decisions on real estate is
                   intimidating and overwhelming. People aren't sure if they are
@@ -223,15 +243,17 @@
 
           <!-- B2C Industry -->
           <div id="page-2" class="page two">
-            <h3 class="heading">B2C Industry</h3>
-            <div class="resume-wrap transition d-flex">
+            <h3 class="heading text-center text-sm-left">B2C Industry</h3>
+            <div
+              class="resume-wrap transition d-flex flex-column flex-sm-row align-items-center align-items-sm-start"
+            >
               <div
                 class="icon d-flex align-items-center justify-content-center"
               >
                 <span class="icon-wrench"></span>
               </div>
-              <div class="text pl-3">
-                <h4>Construction</h4>
+              <div class="text pl-sm-3 text-center text-sm-left">
+                <h4 class="my-1 my-sm-0">Construction</h4>
                 <p>
                   Most of the B2C businesses face the same challenge. They're
                   targeting to minority of the population, not just business
@@ -244,14 +266,16 @@
                 </p>
               </div>
             </div>
-            <div class="resume-wrap transition d-flex">
+            <div
+              class="resume-wrap transition d-flex flex-column flex-sm-row align-items-center align-items-sm-start"
+            >
               <div
                 class="icon d-flex align-items-center justify-content-center"
               >
                 <span class="icon-briefcase"></span>
               </div>
-              <div class="text pl-3">
-                <h4>Finance & Consulting</h4>
+              <div class="text pl-sm-3 text-center text-sm-left">
+                <h4 class="my-1 my-sm-0">Finance & Consulting</h4>
                 <p>
                   Similar to the construction industry, winning in search ads,
                   and SEO is extremely important. Investing in engaging content
@@ -264,14 +288,16 @@
                 </p>
               </div>
             </div>
-            <div class="resume-wrap transition d-flex">
+            <div
+              class="resume-wrap transition d-flex flex-column flex-sm-row align-items-center align-items-sm-start"
+            >
               <div
                 class="icon d-flex align-items-center justify-content-center"
               >
                 <span class="icon-energy"></span>
               </div>
-              <div class="text pl-3">
-                <h4>Energy (Electricity and Gas)</h4>
+              <div class="text pl-sm-3 text-center text-sm-left">
+                <h4 class="my-1 my-sm-0">Energy (Electricity and Gas)</h4>
                 <p>
                   Getting people to change to your brand is challenging industry
                   as it is hard to distinguish from other competitors. Purchase
@@ -291,15 +317,19 @@
 
           <!-- non-profit Industry -->
           <div id="page-3" class="page two">
-            <h3 class="heading">Non-Profit Industry</h3>
-            <div class="resume-wrap transition d-flex">
+            <h3 class="heading text-center text-sm-left">
+              Non-Profit Industry
+            </h3>
+            <div
+              class="resume-wrap transition d-flex flex-column flex-sm-row align-items-center align-items-sm-start"
+            >
               <div
                 class="icon d-flex align-items-center justify-content-center"
               >
                 <span class="icon-people"></span>
               </div>
-              <div class="text pl-3">
-                <h4>Non-Profit Organiation</h4>
+              <div class="text pl-sm-3 text-center text-sm-left">
+                <h4 class="my-1 my-sm-0">Non-Profit Organiation</h4>
                 <p>
                   After working with multiple Not-for-Profit organisations, we
                   know how hard it is to get donations. You may or may not know
@@ -384,15 +414,15 @@
           awards section
           <div id="page-4" class="page four">
             <h3 class="heading">Awards</h3>
-            <div class="resume-wrap transition d-flex">
+            <div class="resume-wrap transition d-flex flex-column flex-sm-row align-items-center align-items-sm-start">
               <div
                 class="icon d-flex align-items-center justify-content-center"
               >
                 <span class="icon-badge"></span>
               </div>
-              <div class="text pl-3">
+              <div class="text pl-sm-3 text-center text-sm-left">
                 <span class="date">2014-2015</span>
-                <h4>Top 10 Web Developer</h4>
+                <h4 class="my-1 my-sm-0">Top 10 Web Developer</h4>
                 <span class="position">Mansoura University</span>
                 <p>
                   Lorem ipsum, or lipsum as it is sometimes known, is dummy text
@@ -402,15 +432,15 @@
                 </p>
               </div>
             </div>
-            <div class="resume-wrap transition d-flex">
+            <div class="resume-wrap transition d-flex flex-column flex-sm-row align-items-center align-items-sm-start">
               <div
                 class="icon d-flex align-items-center justify-content-center"
               >
                 <span class="icon-badge"></span>
               </div>
-              <div class="text pl-3">
+              <div class="text pl-sm-3 text-center text-sm-left">
                 <span class="date">2014-2015</span>
-                <h4>Top 5 LeaderShip Exellence Winner</h4>
+                <h4 class="my-1 my-sm-0">Top 5 LeaderShip Exellence Winner</h4>
                 <span class="position">Mansoura University</span>
                 <p>
                   Lorem ipsum, or lipsum as it is sometimes known, is dummy text
@@ -420,15 +450,15 @@
                 </p>
               </div>
             </div>
-            <div class="resume-wrap transition d-flex">
+            <div class="resume-wrap transition d-flex flex-column flex-sm-row align-items-center align-items-sm-start">
               <div
                 class="icon d-flex align-items-center justify-content-center"
               >
                 <span class="icon-badge"></span>
               </div>
-              <div class="text pl-3">
+              <div class="text pl-sm-3 text-center text-sm-left">
                 <span class="date">2014-2015</span>
-                <h4>Top 4 Web Tester</h4>
+                <h4 class="my-1 my-sm-0">Top 4 Web Tester</h4>
                 <span class="position">Mansoura University</span>
                 <p>
                   Lorem ipsum, or lipsum as it is sometimes known, is dummy text

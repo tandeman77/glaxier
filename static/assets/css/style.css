@@ -272,6 +272,11 @@ ol {
   margin: 0 auto;
 }
 
+/* colours */
+.link-blue {
+  color: #798bb9;
+}
+
 /* =================================== */
 /*    Header Menu
 /* =================================== */
@@ -379,7 +384,7 @@ ol {
   letter-spacing: 4px;
 }
 .hero-area .hero-caption h1 {
-  font-family: 'Cutive Mono', monospace;
+  font-family: "Cutive Mono", monospace;
   font-size: 60px;
   font-weight: 700;
 }
@@ -547,7 +552,7 @@ h2.service-title {
   margin-bottom: 0;
 }
 #navi li a {
-  color: #000000;
+  color: #e45447;
 }
 #navi li a.current {
   color: #90acd1;
@@ -1028,6 +1033,21 @@ h2.service-title {
   background: #90acd1;
 }
 
+.contact-link {
+  text-decoration: none;
+  color: #e4a0a9;
+}
+
+.contact-link:hover {
+  color: #e4707f;
+}
+
+.submit-successful {
+  background-color: #d6f5e7;
+  text-align: center;
+  line-height: 2;
+  font-size: 1.2rem;
+}
 /* =================================== */
 /*    Footer Area
 /* =================================== */

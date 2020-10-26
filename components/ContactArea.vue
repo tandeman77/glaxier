@@ -13,7 +13,7 @@
       <!-- End Section Title -->
 
       <div class="row">
-        <div class="col-lg-3 col-md-4 mb-5 mb-lg-0">
+        <div class="col-lg-4 col-md-5 mb-5 mb-lg-0">
           <div class="contact-left">
             <div class="media align-items-center">
               <div class="media-icon">
@@ -60,15 +60,15 @@
             -->
           </div>
         </div>
-        <div class="col-lg-7 offset-lg-2 col-md-8">
+        <div class="col-lg-7 offset-lg-1 col-md-7">
           <client-only>
             <form
               id="contact-form"
               class="row contact-form"
-              action="#"
-              method="POST"
+              v-on:submit.prevent="formSubmit"
               data-netlify="true"
               name="contact"
+              v-show="!submitted"
             >
               <div class="col-xs-12 col-sm-6">
                 <div class="form-group">
@@ -119,6 +119,16 @@
               </div>
             </form>
           </client-only>
+          <div class="row h-100" v-if="submitted">
+            <div
+              class="col rounded submit-successful d-flex justify-content-center align-items-center"
+            >
+              <p>
+                Thank you for contacting Glaxier.<br />We will be in touch as
+                soon as possible.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -129,16 +139,19 @@
 <script>
 export default {
   name: "ContactArea",
+  data() {
+    return {
+      submitted: false,
+    };
+  },
+  methods: {
+    formSubmit() {
+      this.submitted = true;
+      console.log("submit");
+    },
+  },
 };
 </script>
 
 <style scoped>
-.contact-link {
-  text-decoration: none;
-  color: #e4a0a9;
-}
-
-.contact-link:hover {
-  color: #e4707f;
-}
 </style>
