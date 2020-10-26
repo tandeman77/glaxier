@@ -86,13 +86,9 @@ export default {
           }
         ]
       },
-      '@nuxtjs/gtm',
-    ]
+    ],
+    ['@nuxtjs/google-gtag',{id: 'GTM-WQQ7C6C'}]
   ],
-  
-  gtm: {
-    id: 'GTM-WQQ7C6C'
-  },
   /*
    ** Build configuration
    */

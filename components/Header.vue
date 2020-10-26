@@ -8,9 +8,7 @@
             <!-- Logo -->
             <div class="col-xl-2 col-lg-2 col-md-2">
               <div class="logo">
-                <a href="index.html"
-                  ><img src="assets/img/logo.png" alt="logo"
-                /></a>
+                <a href="/"><img src="/assets/img/logo.png" alt="logo" /></a>
               </div>
             </div>
             <div class="col-xl-10 col-lg-10 col-md-10">
@@ -19,29 +17,29 @@
                 <nav>
                   <ul id="navigation">
                     <li class="nav-item">
-                      <a class="nav-link transition active" href="#body">
+                      <a class="nav-link transition active" href="/#body">
                         Home</a
                       >
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link transition" href="#services"
+                      <a class="nav-link transition" href="/#services"
                         >Services</a
                       >
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link transition" href="#about">About</a>
+                      <a class="nav-link transition" href="/#about">About</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link transition" href="#resume"
+                      <a class="nav-link transition" href="/#resume"
                         >Our Experience</a
                       >
                     </li>
                     <!--
                     <li class="nav-item">
-                      <a class="nav-link transition" href="#works">Works</a>
+                      <a class="nav-link transition" href="/#works">Works</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link transition" href="#blog">Blog</a>
+                      <a class="nav-link transition" href="/#blog">Blog</a>
                       <ul class="submenu transition">
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Blog Details</a></li>
@@ -49,7 +47,9 @@
                     </li>
                     -->
                     <li class="nav-item">
-                      <a class="nav-link transition" href="#contact">Contact</a>
+                      <a class="nav-link transition" href="/#contact"
+                        >Contact</a
+                      >
                     </li>
                   </ul>
                 </nav>
