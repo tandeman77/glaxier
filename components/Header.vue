@@ -22,6 +22,11 @@
                       >
                     </li>
                     <li class="nav-item">
+                      <a class="nav-link transition" href="/#contact"
+                        >Contact</a
+                      >
+                    </li>
+                    <li class="nav-item">
                       <a class="nav-link transition" href="/#services"
                         >Services</a
                       >
@@ -47,8 +52,8 @@
                     </li>
                     -->
                     <li class="nav-item">
-                      <a class="nav-link transition" href="/#contact"
-                        >Contact</a
+                      <a class="nav-link transition" href="/#testimonial"
+                        >Testimonial</a
                       >
                     </li>
                   </ul>
