@@ -8,7 +8,7 @@
           <div class="img-about">
             <img
               class="img-fluid"
-              src="assets/img/about/5063.jpg"
+              src="assets/img/about/2.jpg"
               alt="about us"
             />
           </div>

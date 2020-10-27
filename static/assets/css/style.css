@@ -499,9 +499,10 @@ h2.service-title {
   transform: translateX(0);
 }
 .about-area .img-about img {
-  outline: 10px solid #90acd1;
+  /*outline: 10px solid #90acd1;*/
   outline-offset: -54px;
-  border: 44px solid transparent;
+  border-radius: 10px;
+  /*border: 44px solid transparent;*/
   border-width: 0px 10px 0px 85px;
 }
 .about-area .about-details .about-info li {
