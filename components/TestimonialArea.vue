@@ -19,17 +19,20 @@
               <!-- start tetimonial item -->
               <div class="test-item">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Curabitur leo est, feugiat nec elementum id, suscipit id
-                  nulla. Nulla sit amet luctus dolor. Etiam finibus consequat
-                  ante ac congue. Quisque porttitor porttitor tempus.
+                  Glaxier has been amazing to work with. We did not know the
+                  potential Facebook ads could make on our business until Tan
+                  (founder) recommended it. Thank you for your hardwork. Very
+                  happy with your service.
                 </p>
                 <div class="author-info">
-                  <img src="assets/img/testimonial/f.png" alt="client" />
-                  <h4>Somoe Company</h4>
+                  <img
+                    src="assets/img/testimonial/ufi-logo.png"
+                    alt="UFI logo"
+                  />
+                  <h4>UFI</h4>
                   <div class="position">
-                    Founder
-                    <span>XXXX</span>
+                    Managing Director
+                    <span>Surintra P.</span>
                   </div>
                 </div>
               </div>
