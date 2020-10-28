@@ -15,7 +15,7 @@
               <h4>Follow Us</h4>
             </div>
             <div class="footer-social text-center">
-              <a href="https://www.facebook.com/Digital-123-106029914504675"
+              <a href="https://www.facebook.com/Glaxier-106029914504675/"
                 ><i class="fa fa-facebook transition"></i
               ></a>
             </div>
