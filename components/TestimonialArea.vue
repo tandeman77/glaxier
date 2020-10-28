@@ -19,10 +19,32 @@
               <!-- start tetimonial item -->
               <div class="test-item d-flex justify-content-around flex-column">
                 <p>
+                  Glaxier are exceptional at what they do. We’re using Glaxier
+                  to run our Google Adwords account, they handle everything
+                  including keyword research, ad creation, monitoring and ad
+                  iteration and reporting / analytics. The results have exceeded
+                  our expectations. We’ve used other agencies prior and Glaxier
+                  easily come out on top.
+                </p>
+                <div class="author-info">
+                  <img
+                    src="assets/img/testimonial/picklebet-logo.png"
+                    alt="picklebet logo, sports betting company"
+                  />
+                  <h4>Picklebet</h4>
+                  <div class="position">
+                    <span>Damon O.</span>
+                    , Co-Founder
+                  </div>
+                </div>
+              </div>
+              <div class="test-item d-flex justify-content-around flex-column">
+                <p>
                   Glaxier has been amazing to work with. We did not know the
                   potential Facebook ads could make on our business until Tan
-                  (founder) recommended it. Thank you for your hardwork. Very
-                  happy with your service.
+                  (founder) recommended it and now we're generating over 100
+                  leads through Facebook messages every month. Thank you for
+                  your hardwork. Very happy with your service.
                 </p>
                 <div class="author-info">
                   <img
