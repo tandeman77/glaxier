@@ -46,15 +46,14 @@ export default {
   data() {
     return {
       pageTitle:
-        "Glaxier | A Digital Arm of Businesses to Help them Grow & Win In the Digital Space",
+        "Glaxier | A Digital Savvy Team To Help Your Grow Your Business Online",
       pageDescription:
         "Revolutionary full service digital agency. At Glaxier, we help businesses grow and compete online by offering digital advertising, graphic design, website developement and copy writing services. All to the highest quality guide by industry best practice with a boost of Glaxier's innovations.",
     };
   },
   head() {
     return {
-      title:
-        "Glaxier | A Digital Arm of Businesses to Help them Grow & Win In the Digital Space",
+      title: this.pageTitle,
       meta: [
         {
           hid: "description",
@@ -62,6 +61,11 @@ export default {
           content: this.pageDescription,
         },
         { hid: "og:title", name: "og:title", content: this.pageTitle },
+        {
+          hid: "og:description",
+          name: "og:description",
+          content: this.pageDescription,
+        },
         { hid: "og:image", name: "og:image", content: this.BASE_URL + ogImage },
       ],
     };
