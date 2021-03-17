@@ -51,6 +51,9 @@ export default {
         "Revolutionary full service digital agency. At Glaxier, we help businesses grow and compete online by offering digital advertising, graphic design, website developement and copy writing services. All to the highest quality guide by industry best practice with a boost of Glaxier's innovations.",
     };
   },
+  mounted(){
+    console.log(this)
+  },
   head() {
     return {
       title: this.pageTitle,

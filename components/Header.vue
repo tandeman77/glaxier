@@ -17,27 +17,20 @@
                 <nav>
                   <ul id="navigation">
                     <li class="nav-item">
-                      <a class="nav-link transition active" href="/#body">
-                        Home</a
-                      >
+                      <nuxt-link class="nav-link transition active" :to="localePath('/#body')">Home</nuxt-link>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link transition" href="/#contact"
-                        >Contact</a
-                      >
+                      <nuxt-link class="nav-link transition" :to="localePath('/#contact')">Contact</nuxt-link>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link transition" href="/#services"
-                        >Services</a
-                      >
+                      <nuxt-link class="nav-link transition" :to="localePath('/#services')">Services</nuxt-link>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link transition" href="/#about">About</a>
+                      <nuxt-link class="nav-link transition" :to="localePath('/#about')">About</nuxt-link>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link transition" href="/#resume"
-                        >Our Experience</a
-                      >
+                      <nuxt-link class="nav-link transition" :to="localePath('/#resume')">Our Experience</nuxt-link>
+
                     </li>
                     <!--
                     <li class="nav-item">
@@ -55,6 +48,13 @@
                       <a class="nav-link transition" href="/#testimonial"
                         >Testimonial</a
                       >
+                    </li>
+                    <li class="nav-item">
+                      <p class="nav-link transition">Switch Language</p>
+                      <ul class="submenu transition">
+                        <li><nuxt-link :to="switchLocalePath('en')">English</nuxt-link></li>
+                        <li><nuxt-link :to="switchLocalePath('th')">Thai</nuxt-link></li>
+                      </ul>
                     </li>
                   </ul>
                 </nav>

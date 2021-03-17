@@ -75,6 +75,7 @@ export default {
    */
   modules: [
     '@nuxtjs/gtm',
+    'nuxt-i18n',
     [
       "nuxt-fontawesome",
       {
@@ -89,6 +90,10 @@ export default {
       },
     ],
   ],
+  i18n: {
+    locales: ['en','th'],
+    defaultLocale: 'en'
+  },
   gtm: {
     enabled: true,
     id: 'GTM-WQQ7C6C'

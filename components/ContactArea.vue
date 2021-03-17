@@ -22,8 +22,8 @@
               <div class="media-body">
                 <h4>Email</h4>
                 <span
-                  ><a class="contact-link" href="mailto:contact@glaxier.com.au"
-                    >contact@glaxier.com.au</a
+                  ><a class="contact-link" href="mailto:tan@glaxier.com.au"
+                    >tan@glaxier.com.au</a
                   ></span
                 >
               </div>
