@@ -229,7 +229,7 @@
                 <p>
                   For most people, making decisions on real estate is
                   intimidating and overwhelming. People aren't sure if they are
-                  making the right decisions. "Should I have chosing the other
+                  making the right decisions. "Should I have choosing the other
                   options?". Lead time in the real estate industry is one of the
                   longest of all industries, up there with tourism and
                   education. So, it is importatnt to collect prospects contact
@@ -243,7 +243,7 @@
 
           <!-- B2C Industry -->
           <div id="page-2" class="page two">
-            <h3 class="heading text-center text-sm-left">B2C Industry</h3>
+            <h3 class="heading text-center text-sm-left">B2B Industry</h3>
             <div
               class="resume-wrap transition d-flex flex-column flex-sm-row align-items-center align-items-sm-start"
             >
