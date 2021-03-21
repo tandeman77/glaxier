@@ -69,7 +69,9 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: [],
+  buildModules: [
+    '@nuxtjs/sanity'
+  ],
   /*
    ** Nuxt.js modules
    */
@@ -98,6 +100,9 @@ export default {
     enabled: true,
     id: 'GTM-WQQ7C6C'
   },
+  sanity: {
+    projectId: process.env.SANITY_PROJECT_ID
+  },
   /*
    ** Build configuration
    */
@@ -106,5 +111,8 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
+  },
+  privateRuntimeConfig: {
+    sanity_project_id: process.env.SANITY_PROJECT_ID
   }
 };

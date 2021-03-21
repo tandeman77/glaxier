@@ -59,7 +59,7 @@
 <script>
 export default {
   name: "HeroArea",
-  components: {},
+  prop: ['pageContent'],
   data() {
     return {
       typeString: [

@@ -1344,6 +1344,14 @@
     chalk "^4.1.0"
     semver "^7.3.2"
 
+"@nuxtjs/sanity@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/sanity/-/sanity-0.7.1.tgz#ebdfddb06c959a57c372813d1ec777c75f324087"
+  integrity sha512-s+V2aRGWCPUdl8g1mC25g2kkgJOEWqoe/K2/vxQM5Vc3yBanHK1bUMhR0bhSSgK0O2KHxmX9/QUSPpgf2LZqBA==
+  dependencies:
+    defu "3.2.2"
+    upath "^2.0.1"
+
 "@nuxtjs/youch@^4.2.3":
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/@nuxtjs/youch/-/youch-4.2.3.tgz#36f8b22df5a0efaa81373109851e1d857aca6bed"
@@ -3039,6 +3047,11 @@ define-property@^2.0.2:
   dependencies:
     is-descriptor "^1.0.2"
     isobject "^3.0.1"
+
+defu@3.2.2:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/defu/-/defu-3.2.2.tgz#be20f4cc49b9805d54ee6b610658d53894942e97"
+  integrity sha512-8UWj5lNv7HD+kB0e9w77Z7TdQlbUYDVWqITLHNqFIn6khrNHv5WQo38Dcm1f6HeNyZf0U7UbPf6WeZDSdCzGDQ==
 
 defu@^1.0.0:
   version "1.0.0"
@@ -7562,6 +7575,11 @@ upath@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/upath/-/upath-2.0.0.tgz#7234f3c1e7fd2bcb4f6aaba3e5565ee13ce6d287"
   integrity sha512-ghi1XxsVYPOZPDsOZrfOJIwQU5I3JVYB3Q6IbBGn1KFeOa89i0nUy5tCEkY9pVm83U83qZ1QG40RQKGknllV4w==
+
+upath@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/upath/-/upath-2.0.1.tgz#50c73dea68d6f6b990f51d279ce6081665d61a8b"
+  integrity sha512-1uEe95xksV1O0CYKXo8vQvN1JEbtJp7lb7C5U9HMsIp6IVwntkH/oNUzyVNQSd4S1sYk2FpSSW44FqMc8qee5w==
 
 upper-case@^1.1.1:
   version "1.1.3"

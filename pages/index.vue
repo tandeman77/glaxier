@@ -1,19 +1,19 @@
 <template>
   <div>
-    <HeroArea />
-    <ServiceArea />
-    <AboutArea />
-    <ResumeArea />
+    <HeroArea :pageContent="content[0].heroSection"/>
+    <ServiceArea :content="content[0].serviceSection"/>
+    <AboutArea :content="content[0].aboutSection"/>
+    <ResumeArea :content="content[0].experienceSection"/>
     <!--
     <WorksArea />
     <PriceArea />
     <HireArea />
     -->
-    <TestimonialArea />
+    <TestimonialArea :content="content[0].testimonialSection"/>
     <!--
     <BlogArea />
     -->
-    <ContactArea />
+    <ContactArea :content="content[0].contactSection"/>
   </div>
 </template>
 
@@ -30,6 +30,9 @@ import TestimonialArea from "~/components/TestimonialArea";
 import BlogArea from "~/components/BlogArea";
 import ContactArea from "~/components/ContactArea";
 
+//data query
+import { groq } from '@nuxtjs/sanity'
+
 export default {
   components: {
     HeroArea,
@@ -43,16 +46,18 @@ export default {
     BlogArea,
     ContactArea,
   },
+  async asyncData({$sanity, app}){
+    console.log(app.i18n.locale)
+    const query = groq`{ "content": *[_type == 'home' && language == '${app.i18n.locale}'] }`
+    return $sanity.fetch(query)
+  },
   data() {
     return {
       pageTitle:
         "Glaxier | A Digital Savvy Team To Help Your Grow Your Business Online",
       pageDescription:
-        "Revolutionary full service digital agency. At Glaxier, we help businesses grow and compete online by offering digital advertising, graphic design, website developement and copy writing services. All to the highest quality guide by industry best practice with a boost of Glaxier's innovations.",
+        "Revolutionary full service digital agency. At Glaxier, we help businesses grow online by offering digital advertising, graphic design, website development and copywriting services. We work to highest quality with the mindset to exceed the industry standard",
     };
-  },
-  mounted(){
-    console.log(this)
   },
   head() {
     return {
