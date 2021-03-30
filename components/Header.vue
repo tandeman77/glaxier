@@ -8,7 +8,14 @@
             <!-- Logo -->
             <div class="col-xl-2 col-lg-2 col-md-2">
               <div class="logo">
-                <a href="/"><img src="/assets/img/logo.png" alt="logo" /></a>
+                <nuxt-link :to="localePath('/')">
+                  <SanityImage
+                    :project-id="projectId"
+                    :alt="content.logo.alt"
+                    :asset-id="content.logo.image.asset._ref"
+                    auto="format"
+                  ></SanityImage>
+                </nuxt-link>
               </div>
             </div>
             <div class="col-xl-10 col-lg-10 col-md-10">
@@ -17,20 +24,29 @@
                 <nav>
                   <ul id="navigation">
                     <li class="nav-item">
-                      <nuxt-link class="nav-link transition active" :to="localePath('/#body')">Home</nuxt-link>
+                      <nuxt-link class="nav-link transition active" :to="localePath(content.navLinks[0].linkPath)">{{content.navLinks[0].linkText}}</nuxt-link>
                     </li>
                     <li class="nav-item">
-                      <nuxt-link class="nav-link transition" :to="localePath('/#contact')">Contact</nuxt-link>
+                      <nuxt-link class="nav-link transition" :to="localePath(content.navLinks[1].linkPath)">{{content.navLinks[1].linkText}}</nuxt-link>
                     </li>
                     <li class="nav-item">
-                      <nuxt-link class="nav-link transition" :to="localePath('/#services')">Services</nuxt-link>
+                      <nuxt-link class="nav-link transition" :to="localePath(content.navLinks[2].linkPath)">{{content.navLinks[2].linkText}}</nuxt-link>
                     </li>
                     <li class="nav-item">
-                      <nuxt-link class="nav-link transition" :to="localePath('/#about')">About</nuxt-link>
+                      <nuxt-link class="nav-link transition" :to="localePath(content.navLinks[3].linkPath)">{{content.navLinks[3].linkText}}</nuxt-link>
                     </li>
                     <li class="nav-item">
-                      <nuxt-link class="nav-link transition" :to="localePath('/#resume')">Our Experience</nuxt-link>
-
+                      <nuxt-link class="nav-link transition" :to="localePath(content.navLinks[4].linkPath)">{{content.navLinks[4].linkText}}</nuxt-link>
+                    </li>
+                    <li class="nav-item">
+                      <nuxt-link class="nav-link transition" :to="localePath(content.navLinks[5].linkPath)">{{content.navLinks[5].linkText}}</nuxt-link>
+                    </li>
+                    <li class="nav-item">
+                      <p class="nav-link transition">Switch Language</p>
+                      <ul class="submenu transition">
+                        <li><nuxt-link :to="switchLocalePath('en')">English</nuxt-link></li>
+                        <li><nuxt-link :to="switchLocalePath('th')">Thai</nuxt-link></li>
+                      </ul>
                     </li>
                     <!--
                     <li class="nav-item">
@@ -44,18 +60,6 @@
                       </ul>
                     </li>
                     -->
-                    <li class="nav-item">
-                      <a class="nav-link transition" href="/#testimonial"
-                        >Testimonial</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <p class="nav-link transition">Switch Language</p>
-                      <ul class="submenu transition">
-                        <li><nuxt-link :to="switchLocalePath('en')">English</nuxt-link></li>
-                        <li><nuxt-link :to="switchLocalePath('th')">Thai</nuxt-link></li>
-                      </ul>
-                    </li>
                   </ul>
                 </nav>
               </div>
@@ -73,7 +77,16 @@
 </template>
 
 <script>
+import { SanityImage } from '@nuxtjs/sanity/dist/components/sanity-image'
 export default {
   name: "Header",
+  components: {
+    SanityImage
+  },
+  data(){
+    return {
+      content: this.$store.state.staticContent[this.$i18n.locale].header[0]
+    }
+  }
 };
 </script>

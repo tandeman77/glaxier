@@ -65,7 +65,10 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{src:'~/plugins/TypedJs.js', mode:'client'}],
+  plugins: [
+    {src:'~/plugins/TypedJs.js', mode:'client'},
+    '@/plugins/sanity-blocks.js'
+  ],
   /*
    ** Nuxt.js dev-modules
    */

@@ -7,16 +7,21 @@
           <div class="footer-top flex-column">
             <div class="footer-logo text-center">
               <a href="/#top">
-                <img
-                  src="assets/img/logo.png"
-                  alt="Glaxier, complete digital agency's logo"
-                />
+                <SanityImage
+                  :project-id="projectId"
+                  :alt="content.logo.alt"
+                  :asset-id="content.logo.image.asset._ref"
+                  auto="format"
+                ></SanityImage>
               </a>
-              <h4>Follow Us</h4>
+              <h4>{{content.mediaTitle}}</h4>
             </div>
-            <div class="footer-social text-center">
-              <a href="https://www.facebook.com/Glaxier-106029914504675/"
-                ><i class="fa fa-facebook transition"></i
+            <div
+              v-for="socialLink in content.socialLinks"
+              :key="socialLink._key"
+              class="footer-social text-center">
+              <a :href="socialLink.link"
+                ><i class="fa transition" :class="socialLink.icon"></i
               ></a>
             </div>
           </div>
@@ -24,7 +29,7 @@
       </div>
       <div class="row footer-bottom text-center justify-content-center">
         <p class="col-lg-8 col-sm-12 footer-text">
-          Copyright © All rights reserved | Glaxier
+          {{content.copyrightText}}
         </p>
       </div>
     </div>
@@ -32,7 +37,15 @@
   <!-- End Footer -->
 </template>
 <script>
+import { SanityImage } from '@nuxtjs/sanity/dist/components/sanity-image'
+
 export default {
   name: "Footer",
+  components: {SanityImage},
+  data(){
+    return {
+      content: this.$store.state.staticContent[this.$i18n.locale].footer[0]
+    }
+  }
 };
 </script>

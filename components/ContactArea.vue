@@ -6,7 +6,7 @@
       <div class="row mb-50">
         <div class="col-lg-12">
           <div class="section-title">
-            <h2>Contact Us</h2>
+            <h2>{{content.contactTitle}}</h2>
           </div>
         </div>
       </div>
@@ -15,29 +15,18 @@
       <div class="row">
         <div class="col-lg-4 col-md-5 mb-5 mb-lg-0">
           <div class="contact-left">
-            <div class="media align-items-center">
+            <div
+              v-for="mean in content.contactMeans"
+              :key="mean._key"
+              class="media align-items-center">
               <div class="media-icon">
-                <i class="icon-envelope-letter"></i>
+                <i :class="mean.icon"></i>
               </div>
               <div class="media-body">
-                <h4>Email</h4>
+                <h4>{{mean.meanTitle}}</h4>
                 <span
-                  ><a class="contact-link" href="mailto:tan@glaxier.com.au"
-                    >tan@glaxier.com.au</a
-                  ></span
-                >
-              </div>
-            </div>
-
-            <div class="media align-items-center">
-              <div class="media-icon">
-                <i class="icon-screen-smartphone"></i>
-              </div>
-              <div class="media-body">
-                <h4>Phone</h4>
-                <span
-                  ><a class="contact-link" href="tel:0424 555 959"
-                    >0424 555 959</a
+                  ><a class="contact-link" :href="mean.link"
+                    >{{mean.meanString}}</a
                   ></span
                 >
               </div>
@@ -118,7 +107,7 @@
               <div class="col-xs-12 col-sm-12">
                 <div class="button-field d-flex justify-content-sm-start justify-content-center">
                   <button type="submit" class="btn radius-btn">
-                    Send Message now
+                    {{content.contactCta}}
                   </button>
                 </div>
               </div>
@@ -144,6 +133,7 @@
 <script>
 export default {
   name: "ContactArea",
+  props: ['content'],
   data() {
     return {
       submitted: false,

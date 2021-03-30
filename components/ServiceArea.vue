@@ -6,17 +6,12 @@
         <div class="col-lg-5 mb-5 mb-lg-0">
           <div class="process-block pl-sm-4">
             <span class="text-uppercase text-sm letter-spacing"
-              >Our Services</span
+              >{{content.serviceIntro}}</span
             >
             <h2 class="service-title mb-4 mt-3">
-              We can do these awesome things
+              {{content.serviceTitle}}
             </h2>
-            <p>
-              Our team has a collaborative and hollistic view of the digital
-              landscape. Our services range from the fundamental assets such as
-              a website, brochures, logo, to your outreach strategy to attract
-              your perfect target customers.
-            </p>
+            <block-content :blocks="child" v-for="child in content.serviceDescription" :key="child._id" />
           </div>
         </div>
 
@@ -26,14 +21,10 @@
               <!-- Start Single Service Block -->
               <div class="service-block text-center mb-4 mb-lg-0">
                 <i>
-                  <fa :icon="['fas', 'bullhorn']" />
+                  <fa :icon="['fas', content.serviceCards[0].icon]" />
                 </i>
-                <h4>Digital Advertising</h4>
-                <p>
-                  A complete solution for digital-ready businesses. Generate
-                  sales/leads/engagement across Google, Facebook, Instagram,
-                  TikTok and More.
-                </p>
+                <h4>{{content.serviceCards[0].cardTitle}}</h4>
+                <block-content :blocks="child" v-for="child in content.serviceCards[0].cardDescription" :key="child._id" />
               </div>
               <!-- End Single Service Block -->
             </div>
@@ -42,14 +33,10 @@
               <!-- Start Single Service Block -->
               <div class="service-block text-center mt-sm-4 mb-4 mb-lg-0">
                 <i>
-                  <fa :icon="['fas', 'users']" />
+                  <fa :icon="['fas', content.serviceCards[1].icon]" />
                 </i>
-                <h4>Social Media Management</h4>
-                <p>
-                  Generate brand loyalty and engagement with organic social
-                  media strategy across popular platforms like Facebook,
-                  Instagram and LinkedIn.
-                </p>
+                <h4>{{content.serviceCards[1].cardTitle}}</h4>
+                <block-content :blocks="child" v-for="child in content.serviceCards[1].cardDescription" :key="child._id" />
               </div>
               <!-- End Single Service Block -->
             </div>
@@ -58,14 +45,10 @@
               <!-- Start Single Service Block -->
               <div class="service-block text-center">
                 <i>
-                  <fa :icon="['fas', 'paint-brush']" />
+                  <fa :icon="['fas', content.serviceCards[2].icon]" />
                 </i>
-                <h4>Graphic Design</h4>
-                <p>
-                  Design eye-catching assets for your website, social media
-                  channels, adverts or even your physical stores! We all know
-                  how important good creatives are, right?
-                </p>
+                <h4>{{content.serviceCards[2].cardTitle}}</h4>
+                <block-content :blocks="child" v-for="child in content.serviceCards[2].cardDescription" :key="child._id" />
               </div>
               <!-- End Single Service Block -->
             </div>
@@ -74,14 +57,10 @@
               <!-- Start Single Service Block -->
               <div class="service-block text-center mt-4">
                 <i>
-                  <fa :icon="['fas', 'globe']" />
+                  <fa :icon="['fas', content.serviceCards[3].icon]" />
                 </i>
-                <h4>Website Development</h4>
-                <p>
-                  The bare minimum to create a successful online brand is to
-                  have an online presence. Build engagement and trust through a
-                  killer website.
-                </p>
+                <h4>{{content.serviceCards[3].cardTitle}}</h4>
+                <block-content :blocks="child" v-for="child in content.serviceCards[3].cardDescription" :key="child._id" />
               </div>
               <!-- End Single Service Block -->
             </div>
@@ -96,5 +75,6 @@
 <script>
 export default {
   name: "ServiceArea",
+  props: ['content']
 };
 </script>

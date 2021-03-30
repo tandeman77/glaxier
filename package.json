@@ -17,9 +17,11 @@
     "@nuxtjs/google-gtag": "^1.0.4",
     "@nuxtjs/gtm": "^2.3.2",
     "@nuxtjs/sanity": "^0.7.1",
+    "@sanity/client": "^2.7.1",
     "nuxt": "^2.0.0",
     "nuxt-fontawesome": "^0.4.0",
     "nuxt-i18n": "^6.21.1",
+    "sanity-blocks-vue-component": "0.1.0",
     "vue-typed-js": "^0.1.2"
   },
   "devDependencies": {

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeroArea :pageContent="content[0].heroSection"/>
+    <HeroArea :content="content[0].heroSection"/>
     <ServiceArea :content="content[0].serviceSection"/>
     <AboutArea :content="content[0].aboutSection"/>
     <ResumeArea :content="content[0].experienceSection"/>

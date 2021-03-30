@@ -6,11 +6,13 @@
         <div class="col-lg-6 d-none d-lg-block">
           <!-- Start About Area Image -->
           <div class="img-about">
-            <img
+            <SanityImage
+              :project-id="projectId"
               class="img-fluid"
-              src="assets/img/about/2.jpg"
-              alt="about us"
-            />
+              :alt="content.aboutImage.alt"
+              :asset-id="content.aboutImage.image.asset._ref"
+              auto="format"
+            ></SanityImage>
           </div>
           <!-- End About Area Image -->
         </div>
@@ -19,31 +21,12 @@
           <!-- Start About Detail -->
           <div class="about-details">
             <div class="section-title mb-50">
-              <h2>Who is Glaxier?</h2>
+              <h2>{{content.aboutTitle}}</h2>
             </div>
             <div class="quality-tags d-flex flex-wrap">
-              <span class="quality-tag m-1">Passionate</span>
-              <span class="quality-tag m-1">Innovative</span>
-              <span class="quality-tag m-1">Futuristic</span>
-              <span class="quality-tag m-1">Hard-working</span>
+              <span v-for="tag in content.aboutTags" :key="tag" class="quality-tag m-1">{{tag}}</span>
             </div>
-            <p>
-              We are a team of young and passionate Digital Specialists. Our
-              team has experience working in the big corporate world where we
-              seasoned our skills. We are ready to tackle the world and help
-              more businesses succeed digitally. We have a team of experienced
-              digital advertisers, digital strategists, copywriters, graphic
-              designers and developers who are excited to learn about your brand
-              and help you grow.
-              <br /><br />
-              Our Brand, Glaxier came from the word glacier. It's a metaphor for
-              an iceberg which may seem small above the water but is much
-              biggest under water. Digital marketing effort may not be apparent
-              but it is a crucial part of the succeess of many bussinesses no
-              matter the size. In a way, our team act as the under-water part of
-              a glacier for you business, laying groud work for the sucess
-              everyone appreciate.
-            </p>
+            <block-content :blocks="child" v-for="child in content.aboutDescription" :key="child._id" />
             <!--
             <ul class="about-info mt-4">
               <li>
@@ -73,7 +56,7 @@
             </ul>
             -->
             <div class="download-btn mt-5">
-              <a class="btn radius-btn" href="#contact">Contact Us</a>
+              <a class="btn radius-btn" href="#contact">{{content.aboutCta}}</a>
             </div>
           </div>
           <!-- End About Detail -->
@@ -85,7 +68,16 @@
 </template>
 
 <script>
+import { SanityImage } from '@nuxtjs/sanity/dist/components/sanity-image'
+
 export default {
   name: "AboutArea",
+  props: ['content'],
+  component: {SanityImage},
+  data(){
+    return {
+      projectId: process.env.SANITY_PROJECT_ID
+    }
+  }
 };
 </script>

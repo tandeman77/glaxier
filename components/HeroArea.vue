@@ -6,41 +6,38 @@
         <div class="col-lg-6 col-md-12">
           <!-- Start Hero Caption -->
           <div class="hero-caption">
-            <span class="subheading">Hey! We are</span>
+            <span class="subheading">{{content.heroIntro}}</span>
 
-            <h1>Glaxier!</h1>
+            <h1>{{content.heroTitle}}</h1>
             <div>
-              We are<br />
+              {{content.heroPreRunning}}<br />
               <client-only>
                 <vue-typed-js
                   :typeSpeed="30"
                   :startDelay="1000"
                   :loop="true"
                   :contentType="'html'"
-                  :strings="typeString"
+                  :strings="content.heroRunningText"
                 >
                   <span class="typing"></span>
                 </vue-typed-js>
               </client-only>
             </div>
-            <p>
-              We are a group of young digital specialists who are eager to
-              deliver results for your business. In the age where everything is
-              connected at a touch of a finger tip, there are no recipes to
-              succeed in the digital world, only the best way for you. Our goal
-              is to find that perfect recipe for you.
-            </p>
-            <a href="#contact" class="btn radius-btn">Get In Touch</a>
+            
+            <block-content :blocks="child" v-for="child in content.heroDescription" :key="child._id" />
+            <a href="#contact" class="btn radius-btn">{{content.heroCta}}</a>
           </div>
           <!-- End Hero Caption -->
         </div>
         <div class="col-lg-6 d-none d-lg-block">
           <!-- Hero Right Image -->
           <div class="hero-img">
-            <img
-              src="assets/img/hero/mockup.png"
-              alt="glaxier website design mock up in different screen sizes"
-            />
+            <SanityImage
+              :project-id="projectId"
+              :alt="content.heroImage.alt"
+              :asset-id="content.heroImage.image.asset._ref"
+              auto="format"
+            ></SanityImage>
           </div>
         </div>
       </div>
@@ -57,21 +54,24 @@
 </template>
 
 <script>
+import { SanityImage } from '@nuxtjs/sanity/dist/components/sanity-image'
+
 export default {
   name: "HeroArea",
-  prop: ['pageContent'],
+  components: {
+    SanityImage
+  },
+  props: {
+    content: {
+      type: Object,
+      default: ()=>{
+        return {}
+      }
+    }
+  },
   data() {
     return {
-      typeString: [
-        "Digital Advertising Specialists.",
-        "Google Ads Experts.",
-        "Facebook Ads Gurus.",
-        "Copywriters.",
-        "SEO Experts.",
-        "Website Developers.",
-        "App Developers.",
-        "Graphic Designers.",
-      ],
+      projectId: process.env.SANITY_PROJECT_ID
     };
   },
 };
