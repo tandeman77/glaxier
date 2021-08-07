@@ -46,7 +46,7 @@
     <!-- Hero Animated Shape -->
     <client-only>
       <div class="hero-shape custom-animation">
-        <img src="assets/img/hero/hero-shape.png" alt="animation shape" />
+        <img src="/assets/img/hero/hero-shape.png" alt="animation shape" />
       </div>
     </client-only>
   </section>

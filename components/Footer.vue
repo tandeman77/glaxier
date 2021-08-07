@@ -24,6 +24,9 @@
                 ><i class="fa transition" :class="socialLink.icon"></i
               ></a>
             </div>
+            <div style="text-align:center;">
+              <nuxt-link class="contact-link" to="/privacypolicy">Privacy Policy</nuxt-link>
+            </div>
           </div>
         </div>
       </div>
@@ -40,11 +43,12 @@
 import { SanityImage } from '@nuxtjs/sanity/dist/components/sanity-image'
 
 export default {
-  name: "Footer",
+  name: "FooterNav",
   components: {SanityImage},
   data(){
     return {
-      content: this.$store.state.staticContent[this.$i18n.locale].footer[0]
+      content: this.$store.state.staticContent[this.$i18n.locale].footer[0],
+      projectId: process.env.SANITY_PROJECT_ID
     }
   }
 };

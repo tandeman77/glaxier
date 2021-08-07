@@ -51,14 +51,6 @@ export default {
     const query = groq`{ "content": *[_type == 'home' && language == '${app.i18n.locale}'] }`
     return $sanity.fetch(query)
   },
-  data() {
-    return {
-      pageTitle:
-        "Glaxier | A Digital Savvy Team To Help Your Grow Your Business Online",
-      pageDescription:
-        "Revolutionary full service digital agency. At Glaxier, we help businesses grow online by offering digital advertising, graphic design, website development and copywriting services. We work to highest quality with the mindset to exceed the industry standard",
-    };
-  },
   head() {
     return {
       title: this.pageTitle,

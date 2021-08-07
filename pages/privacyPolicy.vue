@@ -1,12 +1,13 @@
 <template>
 <div>
-<h1>Privacy Policy for Glaxier AUNZ Pty Ltd</h1>
+  <div class="policy container">
+  <h1>Privacy Policy for Glaxier AUNZ Pty Ltd</h1>
 
 <p>At Glaxier, accessible from https://glaxier.com.au, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Glaxier and how we use it.</p>
 
 <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
 
-<p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Glaxier. This policy is not applicable to any information collected offline or via channels other than this website. Our Privacy Policy was created with the help of the <a href="https://www.privacypolicygenerator.info/">Privacy Policy Generator</a>.</p>
+<p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Glaxier. This policy is not applicable to any information collected offline or via channels other than this website.</p>
 
 <h2>Consent</h2>
 
@@ -83,4 +84,10 @@
 
 <p>Glaxier does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
 </div>
+</div>
 </template>
+<style>
+  .policy{
+    padding: 5rem 1rem;
+  }
+</style>

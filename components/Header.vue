@@ -24,28 +24,28 @@
                 <nav>
                   <ul id="navigation">
                     <li class="nav-item">
-                      <nuxt-link class="nav-link transition active" :to="localePath(content.navLinks[0].linkPath)">{{content.navLinks[0].linkText}}</nuxt-link>
+                      <nuxt-link class="nav-link transition active" :to="{path: localePath('/'), hash: content.navLinks[0].linkPath}">{{content.navLinks[0].linkText}}</nuxt-link>
                     </li>
                     <li class="nav-item">
-                      <nuxt-link class="nav-link transition" :to="localePath(content.navLinks[1].linkPath)">{{content.navLinks[1].linkText}}</nuxt-link>
+                      <nuxt-link class="nav-link transition" :to="{path: localePath('/'), hash: content.navLinks[1].linkPath}">{{content.navLinks[1].linkText}}</nuxt-link>
                     </li>
                     <li class="nav-item">
-                      <nuxt-link class="nav-link transition" :to="localePath(content.navLinks[2].linkPath)">{{content.navLinks[2].linkText}}</nuxt-link>
+                      <nuxt-link class="nav-link transition" :to="{path: localePath('/'), hash: content.navLinks[2].linkPath}">{{content.navLinks[2].linkText}}</nuxt-link>
                     </li>
                     <li class="nav-item">
-                      <nuxt-link class="nav-link transition" :to="localePath(content.navLinks[3].linkPath)">{{content.navLinks[3].linkText}}</nuxt-link>
+                      <nuxt-link class="nav-link transition" :to="{path: localePath('/'), hash: content.navLinks[3].linkPath}">{{content.navLinks[3].linkText}}</nuxt-link>
                     </li>
                     <li class="nav-item">
-                      <nuxt-link class="nav-link transition" :to="localePath(content.navLinks[4].linkPath)">{{content.navLinks[4].linkText}}</nuxt-link>
+                      <nuxt-link class="nav-link transition" :to="{path: localePath('/'), hash: content.navLinks[4].linkPath}">{{content.navLinks[4].linkText}}</nuxt-link>
                     </li>
                     <li class="nav-item">
-                      <nuxt-link class="nav-link transition" :to="localePath(content.navLinks[5].linkPath)">{{content.navLinks[5].linkText}}</nuxt-link>
+                      <nuxt-link class="nav-link transition" :to="{path: localePath('/'), hash: content.navLinks[5].linkPath}">{{content.navLinks[5].linkText}}</nuxt-link>
                     </li>
                     <li class="nav-item">
-                      <p class="nav-link transition">Switch Language</p>
+                      <p class="nav-link transition">{{content.navLinks[6].linkText}}</p>
                       <ul class="submenu transition">
                         <li><nuxt-link :to="switchLocalePath('en')">English</nuxt-link></li>
-                        <li><nuxt-link :to="switchLocalePath('th')">Thai</nuxt-link></li>
+                        <li><nuxt-link :to="switchLocalePath('th')">ภาษาไทย</nuxt-link></li>
                       </ul>
                     </li>
                     <!--
@@ -79,13 +79,19 @@
 <script>
 import { SanityImage } from '@nuxtjs/sanity/dist/components/sanity-image'
 export default {
-  name: "Header",
+  name: "NavBar",
   components: {
     SanityImage
   },
   data(){
     return {
-      content: this.$store.state.staticContent[this.$i18n.locale].header[0]
+      content: this.$store.state.staticContent[this.$i18n.locale].header[0],
+      projectId: process.env.SANITY_PROJECT_ID,
+    }
+  },
+  computed: {
+    link(){
+      return this.localePath('/' + this.content.navLinks[3].linkPath)
     }
   }
 };
